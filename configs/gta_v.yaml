@@ -1,0 +1,19 @@
+game:
+  name: "Grand Theft Auto V"
+  window_class: "grcWindow"
+  window_title: "Grand Theft Auto V"
+  display_mode: "windowed_borderless"
+capture:
+  target_fps: 30
+  output_color: "BGRA"
+  output_idx: 0
+roi:
+  health_bar: {x1: 0.045, y1: 0.935, x2: 0.155, y2: 0.955}
+  armor_bar: {x1: 0.102, y1: 0.935, x2: 0.212, y2: 0.955}
+  minimap: {x1: 0.015, y1: 0.700, x2: 0.185, y2: 0.985}
+  hud_scan_region: {bottom_fraction: 0.25, left_fraction: 0.22}
+perception:
+  health: {green_delta: 30, red_delta: 30, min_intensity: 50, col_threshold: 0.3, expected_bar_width_norm: 0.06875, max_bar_width_norm: 0.085}
+alerts:
+  critical_health_threshold: 30.0
+  ttl_seconds: 3.0

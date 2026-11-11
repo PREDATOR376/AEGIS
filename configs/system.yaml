@@ -1,0 +1,21 @@
+system:
+  target_fps: 30
+  log_level: "INFO"
+  debug_mode: false
+  debug_dump_dir: "debug"
+overlay:
+  title: "AEGIS Overlay"
+  vsync: true
+  telemetry_hud: true
+  vitals_hud: false
+ipc:
+  ring_buffer_slots: 2
+  frame_width: 1920
+  frame_height: 1080
+  frame_channels: 4
+  metadata_size: 256
+performance:
+  capture_budget_ms: 4.0
+  perception_budget_ms: 22.0
+  fusion_budget_ms: 0.5
+  overlay_budget_ms: 1.2

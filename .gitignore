@@ -1,0 +1,133 @@
+# ==========================================
+# AEGIS .gitignore
+# ==========================================
+
+# Virtual Environments
+aegis_env/
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.so
+.Python
+.python-version
+.cache/
+
+# Python Tooling
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.tox/
+.nox/
+.dmypy.json
+dmypy.json
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+coverage.json
+htmlcov/
+.hypothesis/
+
+# Model Weights & Compiled Inference Engines
+*.onnx
+*.engine
+*.gguf
+*.pt
+*.pth
+*.bin
+*.weights
+models/
+
+# Video Recordings & Captured Datasets
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wmv
+*.flv
+data/recordings/
+data/raw/
+data/processed/
+captures/
+
+# Build Artifacts & Packaging
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Agent Workspaces & Temporary Runs
+.agents/
+.gemini/
+tmp/
+
+# Runtime Logs, Diagnostics & Local Capture Output
+logs/
+debug/
+debug_capture.png
+debug_hud_roi.png
+*.log
+*.pid
+*.seed
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+
+# Per-machine game settings and future API-provider configuration.
+# Shared game/system defaults in configs/*.yaml remain versioned.
+configs/local.yaml
+configs/local.yml
+configs/*.local.yaml
+configs/*.local.yml
+configs/*_local.yaml
+configs/*_local.yml
+credentials/
+secrets/
+
+# Windows crash dumps
+*.dmp
+
+# IDE, Editor & OS Artifacts
+.vscode/
+.idea/
+.vs/
+.fleet/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Legacy code and local project inventory
+src_old/
+tests_old/
+aegis_structure.txt
